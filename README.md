@@ -13,6 +13,7 @@
 	4. ng g c
 	5. ng g s
 	6. ng g m
+	7.ng g c -it -inline tempate  -it flag
 
 5.Componenents
 	1. class
@@ -24,10 +25,10 @@
 	2. Template expressions.
 	3. Template statements.
 	4. Template reference variables.
-	5. Property binding.
-	6. Event binding.
-	7. Two-way binding.
-	8. Attribute, class, and style bindings
+	5. Property binding. (component to view)
+	6. Event binding. (view to component)
+	7. Two-way binding. (both)
+	8. Attribute, class, and style bindings (component to view)
 	9. Built-in directives
 		1. Built-in attribute directives
 		2. Built-in structural directives
@@ -227,4 +228,11 @@
   
   ## 2. Angular architecture
   - Angular is a MVC (Modal view controller) Framework.
-  - 
+  
+
+  ## 6.Template Syntax
+  
+  1. string interpolation
+	- dynamic string values into your HTML templates. 
+	- one-way data binding (From Component to the View Template). 
+	- double curly braces {{propertyName}}

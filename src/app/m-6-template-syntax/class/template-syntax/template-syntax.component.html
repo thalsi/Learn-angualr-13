@@ -1,1 +1,35 @@
-<p>template-syntax works!</p>
+<h2>6. Template Syntax</h2>
+<ol>
+    <li> dynamic string values into your HTML templates. </li>
+    <li> one-way data binding (From Component to the View Template). </li>
+    <li> double curly braces {{"{{propertyName}}"}}</li>
+</ol>
+
+<ol>
+    <li> Interpolation </li>
+    <li> Interpolation with hardcoded string </li>
+    <li> Method() </li>
+    <li> Ternary Operator </li>
+    <li> Template reference variable </li>
+    <li> Pipes </li>
+    <li> Template expressions </li>
+</ol>
+
+<!--  1. Interpolation  -->
+<h3> 1. Interpolation </h3>
+<p>{{Interpolation}}</p>
+<button innerText={{caption}}></button>
+
+<!--  2. Interpolation with hardcoded string  -->
+<h3> 2. Interpolation with hardcoded string </h3>
+<p>{{'hardcoded string '+ Interpolation}}</p>
+
+
+<!--  3. Method  -->
+<h3> 3. Method() </h3>
+<p>{{'hardcoded string '+ Method()}}</p>
+
+
+<!-- 4. Ternary Operator -->
+<h3> 4. Ternary Operator </h3>
+<p>{{flag ? 'ture string interpulation':'false string interpulation'}}</p>

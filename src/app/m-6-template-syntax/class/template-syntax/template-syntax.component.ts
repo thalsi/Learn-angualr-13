@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TemplateSyntaxComponent implements OnInit {
 
+  propertyName='propertyName';
+  Interpolation='hi string interpulation';
+  public caption: string = "Click Me!";
+
+  flag:boolean=false;
+
   constructor() { }
 
   ngOnInit(): void {
+
+    setInterval(()=>{
+      this.flag=!this.flag;
+    },1000);
+  }
+
+  Method():string{
+    return 'hello world'
   }
 
 }
