@@ -11,6 +11,11 @@ export class TemplateSyntaxComponent implements OnInit {
   Interpolation='hi string interpulation';
   public caption: string = "Click Me!";
 
+  object={
+    id:2,
+    name:'thalseeh'
+  };
+
   flag:boolean=false;
 
   constructor() { }

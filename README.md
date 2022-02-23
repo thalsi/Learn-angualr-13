@@ -233,6 +233,6 @@
   ## 6.Template Syntax
   
   1. string interpolation
-	- dynamic string values into your HTML templates. 
+	- String Interpolation is used to render dynamic data on the HTML template
 	- one-way data binding (From Component to the View Template). 
 	- double curly braces {{propertyName}}
