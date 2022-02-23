@@ -23,19 +23,31 @@
 <p>{{Interpolation}}</p>
 <button innerText={{caption}}></button>
 
+
+
+
 <!--  2. Interpolation with hardcoded string  -->
 <h3> 2. Interpolation with hardcoded string </h3>
 <p>{{'hardcoded string '+ Interpolation}}</p>
 
 
+
+
+
 <!--  3. Method  -->
 <h3> 3. Method() </h3>
 <p>{{'hardcoded string '+ Method()}}</p>
+<p>{{ Method()}},{{ Method()}}</p>
+
+
 
 
 <!-- 4. Ternary Operator -->
 <h3> 4. Ternary Operator </h3>
 <p>{{flag ? 'ture string interpulation':'false string interpulation'}}</p>
+
+
+
 
 <!-- 5. Template reference variable  -->
 <h3> 5. Template reference variable </h3>
@@ -43,14 +55,38 @@
 <p>{{input.value}}</p>
 
 
+
+
 <!-- 6. basic without any error handling  -->
 <h3>6. basic without any error handling</h3>
 <p>{{object.name}}</p>
+
+
 
 <!-- 7.error handling: ensures presence of the property value's in an object -->
 <h3>7.ensures presence of the property value's in an object</h3>
 <p>  Last Modified: {{object && object.id}}</p>
 
+
+
 <!--8. safe navigation operator: it securely connects internal fields-->
 <h3>8. safe navigation operato</h3>
 <p>Country: {{object?.name}}</p>
+
+<!--  9. Template expressions -->
+<h3> 9.Template expressions </h3>
+<p>{{4+5}}</p>
+<p>{{4*5}}</p>
+<p>{{4-5}}</p>
+
+<!-- 10.Pipes -->
+<h3>10. Pipes</h3>
+<p>{{Interpolation| uppercase}}</p>
+<p>{{Interpolation| lowercase}}</p>
+<p>{{Interpolation| json}}</p>
+
+
+<!-- 11.ngNonBindable -->
+<h3>11. ngNonBindable</h3>
+<p>Evaluate: {{Interpolation}}</p>
+<p ngNonBindable>Do not evaluate: {{Interpolation}}</p>

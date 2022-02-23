@@ -9,7 +9,8 @@ export class TemplateSyntaxComponent implements OnInit {
 
   propertyName='propertyName';
   Interpolation='hi string interpulation';
-  public caption: string = "Click Me!";
+  caption: string = "Click Me!";
+  script ='<script>alert("You are hacked")</script>'
 
   object={
     id:2,
